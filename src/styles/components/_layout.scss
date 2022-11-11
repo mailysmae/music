@@ -10,25 +10,45 @@ body{
     margin: auto;
     max-width: 100%;
 }
-.section--header{
-    flex-direction: column;
-}
 .section--footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: auto;
-    border-top: 2px solid $c-logo;
-    top: 80px;
-    position: relative;
+    top: 1060px;
+    position: absolute;
 }
 /*images*/
 img{
     max-width: 100%;
-    padding: 20px;
-    position: relative;
  
 }
-.dwm{
-    width: 50px;
+.dwt{
+    width: 40px;
+}
+.ed{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: .8;
+
+}
+.equals{
+    position: relative;
+    top: 250px;
+}
+/*player*/
+.ligne{
+    border-bottom: 3px solid $c-text;
+}
+.play{
+    margin-left: 200px;
+}
+.play--2{
+    margin-left: 238px;
+}
+.play--3{
+    margin-left: 93px;
 }

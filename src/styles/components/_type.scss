@@ -1,0 +1,22 @@
+.contenair{
+  width: 100%;
+  max-width: 750px;
+  padding: 0;
+  margin: auto;
+}
+/*texte et titre*/
+.title {
+  color: $c-text;
+  font-family: $type-title;    
+}
+.copy{
+  font-family: $type-text;
+  position: absolute;
+  left: 274px;
+}
+.titre{
+  list-style: none;
+  position: relative;
+  top: 300px;
+  padding: 0;
+}

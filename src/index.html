@@ -31,7 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
   <script src="scripts/main.js" defer></script>
-  <link rel="stylesheet" href="styles/style.scss">
+  <link rel="stylesheet" href="styles/app.css">
 
    <!--favicon-->
    <link rel="icon" href="assets/images/protections.svg" type='image/svg'>
@@ -42,17 +42,42 @@
       <header class="section section--header container">
 
         <h1 class="title tgrid-start2">Ed sheeran</h1>       
-       
+        <img class="ed" src="assets/images/ed.png" srcset="assets/images/ed.png 2x" alt="image ed sheeran">
+
+        <button class="bouton-menu">
+          <span class="icon icon__2 icon__3">menu</span>
+          <img class="burger" src="assets/images/burger.svg" srcset="assets/images/burger.svg 2x" alt="icon du burger menu">
+        </button> 
+         <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="ligne menu__link" href="index.html">Accueil</a></li>
+                        <li class="menu__item"><a class="ligne ligne__2 menu__link" href="#">Label</a></li>
+                        <li class="menu__item"><a class="ligne ligne__3 menu__link" href="#">Artiste</a></li>
+                    </ul>
+          </nav>
 
       </header>
     </div>
         <div class="contenair">
             <main>
 
-                <section class="section section--titre container">
-
-    
-                  
+                <section class="section container">
+                  <img class="equals" src="assets/images/equals.png" srcset="assets/images/equals.png 2x" alt="image de l'album d'ed sheeran">
+                    
+                    <ul class="titre">
+                      <li>Bad habits 
+                        <img class="play" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play">
+                      </li>
+                      <div class="ligne"></div>
+                      <li>Shiver
+                        <img class="play play--2" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play">
+                      </li>
+                      <div class="ligne"></div>
+                      <li>The joker and the queen
+                        <img class="play play--3" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play">
+                      </li>
+                      <div class="ligne"></div>
+                    </ul>
 
                 </section>
 
@@ -60,8 +85,8 @@
            </div>
       <div class="contenair">
         <footer class="section section--footer">
-            <small class="copy"><a  href="http://dwm.re/"><img class="dwm" src= "assets/images/logodwtd.svg" srcset="assets/images/logodwtd.svg 2x" alt="Logo DWT"/></a>
-                    © Maïlys Colasse</small>
+          <a href="http://dwm.re/"><img class="dwt" src= "assets/images/logodwtd.svg" srcset="assets/images/logodwtd.svg 2x" alt="Logo DWT"/></a>
+            <small class="copy">© Maïlys Colasse</small>
 
             <ul class="menu__list">
                 <li><a class="menu__el menu__el--ui  nav__inactif" href="label.html">Label</a></li> 
