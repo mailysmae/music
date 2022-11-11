@@ -1,0 +1,34 @@
+body{
+    font-family: $type-text;
+    font-size: $size-text;
+    background-color: $c-bg;
+    color: $c-text;
+    line-height: 1.5;
+}
+.section{
+    padding: 50px;
+    margin: auto;
+    max-width: 100%;
+}
+.section--header{
+    flex-direction: column;
+}
+.section--footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: auto;
+    border-top: 2px solid $c-logo;
+    top: 80px;
+    position: relative;
+}
+/*images*/
+img{
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+ 
+}
+.dwm{
+    width: 50px;
+}
