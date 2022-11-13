@@ -15,14 +15,14 @@
   <meta property="og:title" content="Maïlys Colasse - MusicPLZ"/>
   <meta property="og:description" content="Venez découvrir MusicPLZ"/>
   <meta property="og:url" content="http://mailys-colasse.be/index.html"/>
-  <meta property="og:image" content="http://mailys-colasse.be/projets/tfa/dist/assets/images/logo.png"/>
+  <meta property="og:image" content="http://mailys-colasse.be/projets/tfa/dist/assets/images/ed.png"/>
   <meta property="og:type" content="website"/>
 
   <!-- Twitter Card data -->
   <meta name="twitter:title" content="Maïlys Colasse - MusicPLZ"/>
   <meta name="twitter:description" content="Venez découvrir MusicPLZ"/>
   <meta name="twitter:url" content="http://mailys-colasse.be/index.html"/>
-  <meta name="twitter:image" content="http://mailys-colasse.be/projets/tfa/dist/assets/images/logo.png"/>
+  <meta name="twitter:image" content="http://mailys-colasse.be/projets/tfa/dist/assets/images/ed.png"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,18 +30,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
+  <script src="scripts/data.js" defer></script>
   <script src="scripts/app.js" defer></script>
   <link rel="stylesheet" href="styles/app.css">
 
    <!--favicon-->
-   <link rel="icon" href="assets/images/protections.svg" type='image/svg'>
+   <link rel="icon" href="assets/images/equals.png" type='image/svg'>
 
 </head>
 <body>
  <div class="contenair">
       <header class="section section--header container">
 
-        <h1 class="title tgrid-start2">Ed sheeran</h1>       
+        <h1 class="title">Ed sheeran</h1>       
         <img class="ed" src="assets/images/ed.png" srcset="assets/images/ed.png 2x" alt="image ed sheeran">
 
         <button class="bouton-menu">
@@ -49,9 +50,9 @@
         </button> 
          <nav class="menu">
                     <ul class="menu__burger">
-                        <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Label</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Artiste</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Accueil</a></li>
+                        <li class="menu__item"><a class="menu__link" href="apropos.html">Label</a></li>
+                        <li class="menu__item"><a class="menu__link" href="artiste.html">Artiste</a></li>
                     </ul>
           </nav>
 
@@ -61,28 +62,28 @@
             <main>
 
                 <section class="section container">
-                  <img class="equals" src="assets/images/equals.png" srcset="assets/images/equals.png 2x" alt="image de l'album d'ed sheeran">
-                    
-                  <div>
-                    <p>Bad habits</p>
-                        <button id ='play'><img src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play"><button>
-                  
-                      
-                        <audio id="audio">
-                          <source src="assets/music/shivers.mp3" type='audio/mp3'>
-                        </audio>
-                      </div>
-                      <div class="ligne"></div>
-                   <!---
-                      <li>Shiver
-                        <button class="play"><img class="triangle triangle--2" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play"></button>
-                      </li>
-                      <div class="ligne"></div>
-                      <li>The joker and the queen
-                        <button class="play"><img class="triangle triangle--3" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play"></button>
-                      </li>
-                      <div class="ligne"></div>
-                    -->
+                  <h2 class="title title--sous">Top 3 dernière sortie</h2>
+                  <audio class="audio"></audio>
+                    <div class="music-player">
+                      <h1 class="music-name">Bad habits</h1>
+                      <p class="artist-name">Ed Sheeran</p>
+
+                    <div class="vinyl"></div>
+
+                    <div class="song">
+                      <input type='range' value='0' class='durre'>
+                      <span class='current-time'></span>
+                      <span class='song-duration-time'></span>
+                    </div>
+
+                    <div class="player">
+                      <button class="btn precedent-btn"><img src="/assets/images/predecent.svg" srcset="/assets/images/predecent.svg 2x" alt="bouton pour passer à la chanson d'avant"></button>
+                      <button class="play-btn pause">
+                        <span></span>
+                        <span></span>
+                      </button>
+                      <button class="btn suivant-btn"><img src="/assets/images/suivant.svg" srcset="/assets/images/suivant.svg 2x" alt="bouton pour passer à la chanson suivante"></button>
+                    </div>
 
                 </section>
 

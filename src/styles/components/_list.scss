@@ -26,9 +26,15 @@ a{
     text-decoration: none;
     color: black;
 }  
-
+.menu__link:hover{
+   color: cadetblue;
+} 
 .menu__el{
     margin: 33px;
+    
+}
+.menu__el:hover{
+    color: black;
     
 }
 .menu__burger{
@@ -110,8 +116,23 @@ body[burger-menu] .menu{
   height: 100%;
   width: 100%;
   background: $c-text;
+  z-index: 1;
 }
 body[burger-menu] .bouton-menu__icon:hover{
     background-image: url(../assets/images/fermer.svg);
 }
-  
+@media (min-width: 600px){
+    .copy{
+        margin-left: 107px;
+    }
+
+}
+@media (min-width: 1200px){
+    .copy{
+        margin: -171px;
+        font-size: 10px;
+    }
+   .menu__link{
+    font-size: 40px;
+   }
+}
