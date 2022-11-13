@@ -1,9 +1,10 @@
 body{
     font-family: $type-text;
     font-size: $size-text;
-    background-color: $c-bg;
+    background: $c-bg;
     color: $c-text;
     line-height: 1.5;
+    background-size: 100% 200%;
 }
 .section{
     padding: 50px;
