@@ -9,10 +9,30 @@ a{
 .menu__list{
     list-style: none;
     display: flex;
-    flex-direction: row;
 }
+
+.menu{
+    display: none;
+}
+  
+.menu__item{
+    margin: auto;
+    /*border-bottom: 3px solid black;*/
+}
+.menu__link{
+    padding: 20px;
+    margin: 0;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}  
+
 .menu__el{
     margin: 33px;
+    
+}
+.menu__burger{
+    margin: auto;
 }
 .reseau__el a{
     display: inline-block;
@@ -72,26 +92,15 @@ a{
     background: transparent;
     border: none;
 }
-.bouton-menu:hover{
+
+.bouton-menu__icon{
+    max-width: 30px;
     cursor: pointer;
 }
-/*les liens du menu ne son plus visible sur la page d'accueil mais juste dans le burger menu*/
-.menu{
-  display: none;
+.bouton-menu__icon:hover{
+   color: aquamarine;
 }
 
-.menu__list{
-    margin: auto;
-    list-style: none;
-}
-.menu__link{
-    display: inline-block;
-    padding: px;
-    margin: 0;
-    font-size: 25px;
-    text-decoration: none;
-    color: black;
-}
 /*le burger s'ouvre*/
 body[burger-menu] .menu{
   display: flex;
@@ -100,9 +109,9 @@ body[burger-menu] .menu{
   left: 0;
   height: 100%;
   width: 100%;
-  background: lightblue;
+  background: $c-text;
 }
-/*couleur du bouton retour*/
-body[burger-menu] .bouton-menu{
-  color: black;
+body[burger-menu] .bouton-menu__icon:hover{
+    background-image: url(../assets/images/fermer.svg);
 }
+  

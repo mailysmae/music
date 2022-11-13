@@ -9,6 +9,7 @@ body{
     padding: 50px;
     margin: auto;
     max-width: 100%;
+    z-index: -2;
 }
 .section--footer{
     display: flex;
@@ -16,6 +17,8 @@ body{
     justify-content: space-between;
     top: 1060px;
     position: absolute;
+    border-top: 3px solid $c-text;
+    
 }
 /*images*/
 img{
@@ -38,17 +41,23 @@ img{
 .equals{
     position: relative;
     top: 250px;
+    z-index: -2;
 }
 /*player*/
 .ligne{
     border-bottom: 3px solid $c-text;
 }
 .play{
-    margin-left: 200px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
-.play--2{
-    margin-left: 238px;
+.triangle{
+    margin-left: 193px;
 }
-.play--3{
-    margin-left: 93px;
+.triangle--2{
+    margin-left: 230px;
+}
+.triangle--3{
+    margin-left: 85px;
 }

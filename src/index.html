@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
-  <script src="scripts/main.js" defer></script>
+  <script src="scripts/app.js" defer></script>
   <link rel="stylesheet" href="styles/app.css">
 
    <!--favicon-->
@@ -45,14 +45,13 @@
         <img class="ed" src="assets/images/ed.png" srcset="assets/images/ed.png 2x" alt="image ed sheeran">
 
         <button class="bouton-menu">
-          <span class="icon icon__2 icon__3">menu</span>
-          <img class="burger" src="assets/images/burger.svg" srcset="assets/images/burger.svg 2x" alt="icon du burger menu">
+          <img class="bouton-menu bouton-menu__icon" src="assets/images/burger.svg" srcset="assets/images/burger.svg 2x" alt="menu icon">
         </button> 
          <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="ligne menu__link" href="index.html">Accueil</a></li>
-                        <li class="menu__item"><a class="ligne ligne__2 menu__link" href="#">Label</a></li>
-                        <li class="menu__item"><a class="ligne ligne__3 menu__link" href="#">Artiste</a></li>
+                    <ul class="menu__burger">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Label</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Artiste</a></li>
                     </ul>
           </nav>
 
@@ -64,20 +63,26 @@
                 <section class="section container">
                   <img class="equals" src="assets/images/equals.png" srcset="assets/images/equals.png 2x" alt="image de l'album d'ed sheeran">
                     
-                    <ul class="titre">
-                      <li>Bad habits 
-                        <img class="play" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play">
-                      </li>
+                  <div>
+                    <p>Bad habits</p>
+                        <button id ='play'><img src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play"><button>
+                  
+                      
+                        <audio id="audio">
+                          <source src="assets/music/shivers.mp3" type='audio/mp3'>
+                        </audio>
+                      </div>
                       <div class="ligne"></div>
+                   <!---
                       <li>Shiver
-                        <img class="play play--2" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play">
+                        <button class="play"><img class="triangle triangle--2" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play"></button>
                       </li>
                       <div class="ligne"></div>
                       <li>The joker and the queen
-                        <img class="play play--3" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play">
+                        <button class="play"><img class="triangle triangle--3" src="assets/images/play.svg" srcset="assets/images/play.svg 2x" alt="bouton play"></button>
                       </li>
                       <div class="ligne"></div>
-                    </ul>
+                    -->
 
                 </section>
 
@@ -89,8 +94,8 @@
             <small class="copy">© Maïlys Colasse</small>
 
             <ul class="menu__list">
-                <li><a class="menu__el menu__el--ui  nav__inactif" href="label.html">Label</a></li> 
-                <li><a class="menu__el menu__el--case nav__inactif" href="artiste.html">Artiste</a></li> 
+                <li><a class="menu__el nav__inactif" href="label.html">Label</a></li> 
+                <li><a class="menu__el nav__inactif" href="artiste.html">Artiste</a></li> 
             </ul>
         
 
